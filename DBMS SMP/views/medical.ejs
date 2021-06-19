@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doctor Details</title>
+        <link rel="stylesheet" href="../assets/medical.css">
+        <style>
+            header {
+                font-size: 2rem;
+                padding: 1%;
+                text-align: center;
+            }
+            form {
+                padding: 2%;
+                border:4px solid #ccc;
+                margin-left: 20%;
+                margin-right: 20%;
+                margin-top: 3%;
+                margin-bottom: 3%;
+                border-radius: 50px;
+                text-align: center;
+            }
+            div {
+                padding: 0.5%;
+            }
+            label {
+                margin-right: 2%;
+            }
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-indent: 1px;
+                text-overflow: '';
+                background-color: #005763;
+                color: #fff;
+                width: 50%;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            option {
+                text-align: left;
+                padding-left: 30%;
+                padding-right: 30%;
+                padding-top: 30px;
+                padding-bottom: 20px;
+                background-color: #005763;
+                color: #fff;
+            }
+            input {
+                font-size: 16px;
+                width: 50%;
+                background-color: #fff;
+                color: #000000;
+                border: none;
+                padding: 16px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            button {
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-family: 'Times New Roman', Times, serif;
+                display: inline-block;
+                font-size: 20px;
+                width: 150px;
+                background-color: #005763;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                outline: none;
+            }
+            button:hover {
+                box-shadow: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Query</header>
+        <form action="">
+            <div>
+                <label for="doc">Select a Field</label>
+                <select name="doctordetails" id="doc">
+                    <option disabled selected value="0">Select</option>
+                            <option value="Id">ID</option>
+                            <option value="name">Name</option>
+                            <option value="addr">Address</option>
+                            <option value="contact">Contact</option>
+                            <option value="email">Email</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="val">Value of field</label>
+                <input type="text" placeholder="Value">
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+
+</html>
